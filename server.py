@@ -7,8 +7,8 @@ def hello_world(request):
   name = os.environ.get('NAME')
   if name == None or len(name) == 0:
     name = "world"
-  message = "Hello, " + name + "!\n return
-  Response(message)
+  message = "Hello, " + name + "!\n
+  return Response(message)
   
 if __name__ == '__main__':
   port = int(os.environ.get("PORT"))
